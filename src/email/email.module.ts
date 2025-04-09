@@ -18,7 +18,7 @@ import { UsersModule } from '../users/users.module';
       }),
       inject: [ConfigService],
     }),
-    forwardRef(() => UsersModule), // Use forwardRef to break circular dependency
+    forwardRef(() => UsersModule),
   ],
   providers: [EmailService, EmailProcessor],
   exports: [EmailService],
